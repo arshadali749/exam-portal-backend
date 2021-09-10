@@ -5,9 +5,9 @@ import com.exam.entities.User;
 import org.springframework.stereotype.Service;
 
 public interface RoleService {
-    public Role createRole(Role role);
-    public void deleteRole(long id);
-    public Role getRoleById(long id);
-    public Role updateRole(Role role);
+    Role createRole(Role role);
+    void deleteRole(long id);
+    Role getRoleById(long id);
+    Role updateRole(Role role);
 
 }

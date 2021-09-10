@@ -1,6 +1,4 @@
 package com.exam.dto;
-
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class CustomMessageDto {

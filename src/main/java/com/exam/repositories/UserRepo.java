@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface UserRepo extends JpaRepository<User, Long> {
     @Query("SELECT u FROM User u WHERE u.isActive = 1")
-    public List<User> getAllActiveUsers();
+    List<User> getAllActiveUsers();
 
     @Query("SELECT u FROM User u WHERE u.isActive = 0")
     List<User> getAllEnactiveUsers();
