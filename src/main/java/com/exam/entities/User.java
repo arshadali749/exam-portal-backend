@@ -23,7 +23,7 @@ public class User implements UserDetails {
     private String phone;
     private String profile;
     private boolean isActive;
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     Set<Role> roles = new HashSet<>();
 
     public User() {
