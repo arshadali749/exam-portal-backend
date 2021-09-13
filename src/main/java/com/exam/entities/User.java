@@ -148,7 +148,7 @@ public class User implements UserDetails {
         roles.forEach(role->{
             autorities.add(new Authority(role.getName()));
         });
-        return null;
+        return autorities;
     }
 
 }
